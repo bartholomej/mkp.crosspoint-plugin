@@ -1,0 +1,31 @@
+{
+  "title": "Czech E-books (MKP)",
+  "browse": {
+    "format": "json",
+    "url": "https://api-mkp.aquasoup.com/books?list=new&page={page}&limit={limit}",
+    "lists_url": "https://api-mkp.aquasoup.com/lists",
+    "items": "items",
+    "fields": {
+      "title": "title",
+      "author": "author",
+      "id": "id",
+      "url": "url",
+      "description": "description"
+    },
+    "compatibility": {
+      "requires": "requires"
+    },
+    "page_size": 8,
+    "search": {
+      "url": "https://api-mkp.aquasoup.com/search?q={query}&page={page}&limit={limit}"
+    }
+  },
+  "download": {
+    "url": "{url}",
+    "dest_dir": "/MKP",
+    "filename": "{author} - {title}.epub"
+  },
+  "description": "Free e-books from the Municipal Library of Prague (Městská knihovna v Praze). Unofficial.",
+  "author": "BART!",
+  "version": "0.1.0"
+}
